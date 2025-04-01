@@ -4,7 +4,7 @@ function kalkulal() {
   const magassag = parseInt(document.getElementById("magassag").value);
   const papir = parseInt(document.getElementById("papirtipus").value);
 
-  const terulet = Math.round((szelesseg * magassag) / 100) / 10; // cm2 -> dm2
+  const terulet = Math.round((szelesseg * magassag) / 100) / 100; // cm2 -> dm2
   const koltseg = Math.round(terulet * papir);
 
   document.getElementById("terulet").innerText = terulet;
